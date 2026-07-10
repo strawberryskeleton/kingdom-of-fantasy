@@ -164,18 +164,18 @@ nav .cta-btn {
 
 /* ------ destinations----- */
 #about {
-    margin-top: 4rem;
+    margin-top: 2.75rem;
     width: 100%;
     padding: 2rem 3rem;
     /* background-color: cadetblue; */
 }
 
 #about .title-div {
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
 }
 
 #about .title-div h2 {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 #about .title-div p {
