@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 :root {
-    --text-light: #ddd;
+    --text-light: #f4f2f2;
     --text-dark: #333;
     --text-grey: #666;
     --primary: #de4035;
+    --primary-light: #ff5e53;
     --white: #fff;
 }
 
@@ -114,7 +115,7 @@ nav .cta-btn {
 }
 
 #home .container .content {
-    padding: 4rem 1rem;
+    padding: 4rem 2.5rem;
 }
 
 #home .container .content p {
@@ -196,8 +197,15 @@ nav .cta-btn {
     /* margin-top: 0;
     margin-left: 0;
     margin-right: 0; */
+    /* background-color: #de4035; */
     margin: 0;
     margin-bottom: 1.75rem;
+    text-align: left;
+}
+
+#about .title-div p {
+    /* text-align: left; */
+    width: 100%;
 }
 
 #about .cards-div {
@@ -361,4 +369,93 @@ nav .cta-btn {
 
 #testimonials .cards .card .testi-details .profile-details .profession {
     color: var(--text-grey);
+}
+
+
+/* ------ FOOTER-------- */
+footer {
+    margin-top: 3rem;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    background-color: var(--primary);   
+}
+
+footer .header-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .header-div .logo {
+    width: 10rem;
+    height: 5rem;
+}
+
+footer .header-div .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+footer .header-div .back-btn button {
+    border: 1px solid var(--white);
+    text-transform: uppercase;
+}
+
+
+footer .content-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+footer .content-div .newsletter-div {
+    grid-row: span 2 / span 2;
+    background-color: var(--primary-light);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+footer .content-div .nav-links {
+    grid-row: span 2 / span 2;
+    background-color: var(--primary-light);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+footer .content-div .nav-links ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+footer .content-div .nav-links ul a {
+    text-decoration: none;
+    color: var(--text-light);
+    text-transform: uppercase;
+}
+
+footer .content-div .social-links {
+    background-color: var(--primary-light);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+footer .content-div .social-links .socials {
+    display: flex;
+}
+
+footer .content-div .download-app {
+    grid-column-start: 3;
+    background-color: var(--primary-light);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    display: flex;
+}
+
+footer .content-div .download-app .qr-code {
+    width: 5rem;
+    height: 5rem;
 }

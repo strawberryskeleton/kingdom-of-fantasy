@@ -15,8 +15,9 @@ oR
 - card with stats
 - 
 - testimonials [from fantasy people like knights or fairies or dragon etc.]
-- contact page
+X contact page
 - footer
 
 
  home char: https://in.pinterest.com/pin/1055599908260854/
+ https://visitabudhabi.ae/en
