@@ -9,7 +9,14 @@ TO DO:
 
 oR
  [travel website for kingdom of fantasy entirely in fantasy font]
-
+- navbar
+- home section
+- popular destnations
+- card with stats
+- 
+- testimonials
+- contact page
+- footer
 
 
  home char: https://in.pinterest.com/pin/1055599908260854/
