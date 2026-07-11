@@ -5,7 +5,7 @@
     --text-dark: #333;
     --text-grey: #666;
     --primary: #de4035;
-    --primary-light: #ff5e53;
+    --primary-light: #c1352b;
     --white: #fff;
 }
 
@@ -410,18 +410,36 @@ footer .content-div {
     margin-top: 2.5rem;
 }
 
+footer .content-div h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+    font-weight: 700;
+}
+
 footer .content-div .newsletter-div {
     grid-row: span 2 / span 2;
     background-color: var(--primary-light);
     border-radius: 1rem;
-    padding: 1.5rem;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .content-div .newsletter-div .text {
+    color: var(--text-light);
+}
+
+footer .content-div .newsletter-div .cta-btn button {
+    width: 100%;
 }
 
 footer .content-div .nav-links {
     grid-row: span 2 / span 2;
     background-color: var(--primary-light);
     border-radius: 1rem;
-    padding: 1.5rem;
+    padding: 1.5rem 2rem;
 }
 
 footer .content-div .nav-links ul {
@@ -435,27 +453,63 @@ footer .content-div .nav-links ul a {
     text-decoration: none;
     color: var(--text-light);
     text-transform: uppercase;
+    font-weight: 600
 }
 
 footer .content-div .social-links {
     background-color: var(--primary-light);
     border-radius: 1rem;
-    padding: 1.5rem;
+    padding: 1.5rem 2rem;
 }
 
 footer .content-div .social-links .socials {
     display: flex;
+    justify-content: space-between;
+    color: var(--text-light);
+    font-size: 1.5rem;
 }
 
 footer .content-div .download-app {
     grid-column-start: 3;
     background-color: var(--primary-light);
     border-radius: 1rem;
-    padding: 1.5rem;
+    padding: 1.5rem 2rem;
     display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+footer .content-div .download-app h3 {
+    width: 50%;
 }
 
 footer .content-div .download-app .qr-code {
     width: 5rem;
     height: 5rem;
+}
+
+footer .content-div .download-app .qr-code img {
+    width: 100%;
+    height: 100%;
+}
+
+
+footer .copyright-div {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: cornflowerblue; */
+    color: var(--text-light);
+    margin-top: 1rem;
+}
+
+footer .copyright-div .links ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+footer .copyright-div .links ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--text-light);
 }
