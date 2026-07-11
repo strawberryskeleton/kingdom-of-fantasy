@@ -7,6 +7,7 @@
     --primary: #de4035;
     --primary-light: #c1352b;
     --white: #fff;
+    /* --fantasy-font: "Fantasian Alphabet"; */
 }
 
 *,
@@ -15,6 +16,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* font-family: var(--fantasy-font); */
+}
+
+@font-face {
+    font-family: "Fantasian Alphabet";
+    src: url('./assets/fantasian_alphabets.otf') format("opentype");
 }
 
 body {
@@ -23,6 +30,17 @@ body {
     /* background-color: cornflowerblue; */
     font-family: "DM Sans", sans-serif;
     background-color: var(--white);
+}
+
+body.fantasy {
+    font-family: "Fantasian Alphabet";
+    font-size: 17px;
+    /* letter-spacing: 1px; */
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
 }
 
 /* ========= NAVBAR ===== */
@@ -533,4 +551,5 @@ footer .copyright-div .links ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
