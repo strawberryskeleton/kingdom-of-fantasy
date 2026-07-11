@@ -14,7 +14,7 @@ oR
 - popular destnations
 - card with stats
 - 
-- testimonials
+- testimonials [from fantasy people like knights or fairies or dragon etc.]
 - contact page
 - footer
 
