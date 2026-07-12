@@ -449,6 +449,14 @@ footer .header-div .logo img {
 footer .header-div .back-btn button {
     border: 1px solid var(--white);
     text-transform: uppercase;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+footer .header-div .back-btn button:hover {
+    background-color: var(--text-light);
+    color: var(--primary);
 }
 
 
@@ -485,6 +493,11 @@ footer .content-div .newsletter-div .cta-btn button {
     width: 100%;
 }
 
+footer .content-div .newsletter-div .cta-btn button:hover {
+    background-color: var(--text-light);
+    color: var(--primary);
+}
+
 footer .content-div .nav-links {
     grid-row: span 2 / span 2;
     background-color: var(--secondary);
@@ -503,7 +516,14 @@ footer .content-div .nav-links ul a {
     text-decoration: none;
     color: var(--text-light);
     text-transform: uppercase;
-    font-weight: 600
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.15s ease-in;
+}
+
+footer .content-div .nav-links ul a:hover {
+    /* color: var(--primary); */
+    font-weight: 900;
 }
 
 footer .content-div .social-links {
@@ -519,6 +539,21 @@ footer .content-div .social-links .socials {
     font-size: 1.5rem;
 }
 
+footer .content-div .social-links .socials .link {
+    padding: 0.25rem 0.5rem;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+footer .content-div .social-links .socials .link a {
+    text-decoration: none;
+    color: var(--text-light);
+}
+
+footer .content-div .social-links .socials .link:hover {
+    background: var(--primary);
+}
+
 footer .content-div .download-app {
     grid-column-start: 3;
     background-color: var(--secondary);
@@ -526,6 +561,7 @@ footer .content-div .download-app {
     padding: 1.5rem 2rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 1rem;
 }
 
