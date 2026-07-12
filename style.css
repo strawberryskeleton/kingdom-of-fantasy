@@ -261,6 +261,10 @@ nav .cta-btn {
     margin-top: 2rem;
 }
 
+#about .cards-div .card:hover .card-img img {
+    transform: scale(1.1);
+}
+
 #about .cards-div .card .card-img {
     /* width: 100%; */
     height: 13rem;
@@ -271,6 +275,7 @@ nav .cta-btn {
 #about .cards-div .card .card-img img {
     width: 100%;
     height: 100%;
+    transition: all 0.3s ease-in-out;
 }
 
 #about .cards-div .card .card-desc {
@@ -337,6 +342,7 @@ nav .cta-btn {
 }
 
 
+
 /* ====== TESTIMONIALS ===== */
 #testimonials {
     margin-top: 2.75rem;
@@ -359,6 +365,11 @@ nav .cta-btn {
     flex-direction: column;
     padding: 0.5rem;
     border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+#testimonials .cards .card:hover {
+    background-color: var(--primary);
 }
 
 #testimonials .cards .card .testi-content {
@@ -378,6 +389,11 @@ nav .cta-btn {
     align-items: center;
     width: 100%;
     padding: 1rem;
+}
+
+#testimonials .cards .card:hover .testi-details .profile-details .name,
+#testimonials .cards .card:hover .testi-details .profile-details .profession {
+    color: var(--text-light);
 }
 
 #testimonials .cards .card .testi-details .profile-img {
