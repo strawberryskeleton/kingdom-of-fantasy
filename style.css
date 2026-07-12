@@ -5,7 +5,7 @@
     --text-dark: #333;
     --text-grey: #666;
     --primary: #de4035;
-    --primary-light: #c1352b;
+    --secondary: #f64f43;
     --white: #fff;
     /* --fantasy-font: "Fantasian Alphabet"; */
 }
@@ -57,6 +57,7 @@ nav {
     top: 0;
     left: 0;
     z-index: 100;
+    border-bottom: 3px dashed var(--primary);
 }
 
 nav .logo {
@@ -84,6 +85,11 @@ nav .links ul a {
     text-transform: uppercase;
     color: var(--text-dark);
     font-weight: 600;
+    transition: color 0.2s ease-in-out;
+}
+
+nav .links ul a:hover {
+    color: var(--primary);
 }
 
 nav .cta-btn {
@@ -100,6 +106,11 @@ nav .cta-btn {
     background-color: var(--primary);
     border-radius: 5rem;
     cursor: pointer;
+    transition: background-color 0.2s ease-in;
+}
+
+.btn:hover {
+    background-color: var(--secondary);
 }
 
 
@@ -172,6 +183,11 @@ nav .cta-btn {
     background-color: var(--white);
     border-radius: 100%;
     text-decoration: none;
+    transition: color 0.2s ease-in;
+}
+
+#home .container .content .cta-btns a:hover {
+    color: var(--secondary);
 }
 
 #home .container .home-img img{
@@ -437,7 +453,7 @@ footer .content-div h3 {
 
 footer .content-div .newsletter-div {
     grid-row: span 2 / span 2;
-    background-color: var(--primary-light);
+    background-color: var(--secondary);
     border-radius: 1rem;
     padding: 1.5rem 2rem;
     display: flex;
@@ -455,7 +471,7 @@ footer .content-div .newsletter-div .cta-btn button {
 
 footer .content-div .nav-links {
     grid-row: span 2 / span 2;
-    background-color: var(--primary-light);
+    background-color: var(--secondary);
     border-radius: 1rem;
     padding: 1.5rem 2rem;
 }
@@ -475,7 +491,7 @@ footer .content-div .nav-links ul a {
 }
 
 footer .content-div .social-links {
-    background-color: var(--primary-light);
+    background-color: var(--secondary);
     border-radius: 1rem;
     padding: 1.5rem 2rem;
 }
@@ -489,7 +505,7 @@ footer .content-div .social-links .socials {
 
 footer .content-div .download-app {
     grid-column-start: 3;
-    background-color: var(--primary-light);
+    background-color: var(--secondary);
     border-radius: 1rem;
     padding: 1.5rem 2rem;
     display: flex;
